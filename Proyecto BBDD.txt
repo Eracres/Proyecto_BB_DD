@@ -1,0 +1,39 @@
+Descripcion en el proyecto de la siguiente forma
+
+-Modelo E/R --> Word
+-Modelo Relaconal --> Word
+-SQL
+
+-Listado de productos.sql
+
+-Creates.sql
+-Insert.sql
+
+-Pedido.sql --> 2 pedidos
+-Albaran.sql --> 2 albaranes
+-Factura.sql --> 1 factura 
+
+-Productos
+	10 Minimo
+
+-Pedidos
+	
+TTITLE 'LISTA DE PRODUCTOS| ============================'
+BTITLE LEFT 'Ejemplo'
+COLUMN C_PRODUCTO HEADIND 'Codigo'
+COLUMN C_PRODUCTO FORMAT A15
+COLUMN C_PRODUCTO TUNCATED
+
+COLUMN N_PRODUCTO HEADIND 'Nombre'
+COLUMN PRECIO HEADIND 'Precio' FORMAT 999D99
+
+SET LINESIZE 100
+SET PAGESIZE 50
+SET NEW PAGE 0
+
+SELECT C_PRODUCTO, N_PRODUCTO, PRECIO FROM PRODUCTO ORDER BY C_PRODUCTO DESC;
+
+TTITLE OFF
+BTITLE OFF
+
+SPOOL OFF
